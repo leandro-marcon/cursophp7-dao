@@ -28,10 +28,26 @@ echo json_encode($search);
 */
 
 //CARREGA UM OSUARIO USANDO LOGIN E SENHA
+/*
+$usuario = new Usuario();
+$usuario->login("leandro", "1003");//passa dois parametros validos
+echo $usuario;
+*/
+//CRIANDO UM NOVO USUARIO
+/*
+$aluno = new Usuario("aluno", "14566");
+
+$aluno->insert();//chama a função de insert dentro do usuario
+
+echo $aluno;
+*/
+
 
 $usuario = new Usuario();
-$usuario->login("ivy", "1003");//passa dois parametros validos
+
+$usuario->loadById(3);
+
+
+$usuario->update("ISIS", "88787");
 echo $usuario;
-
-
  ?>

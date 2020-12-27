@@ -94,7 +94,7 @@ class Usuario {
 		}
 
 	}
-
+///METOO PARA DADOS
 	public function setData($data){
 
 		$this->setIdusuario($data['idusuario']);
@@ -103,7 +103,7 @@ class Usuario {
 		$this->setDtcadastro(new DateTime($data['dtcadastro']));
 
 	}
-
+//CRIANDO INSERTS 
 	public function insert(){
 
 		$sql = new Sql();
@@ -118,6 +118,7 @@ class Usuario {
 		}
 
 	}
+
 
 	public function update($login, $password){
 
@@ -148,7 +149,7 @@ class Usuario {
 		$this->setDtcadastro(new DateTime());
 
 	}
-
+////METODO CONSTRUTOR PARA RECEBER SENHA E USUARIO
 	public function __construct($login = "", $password = ""){
 
 		$this->setDeslogin($login);

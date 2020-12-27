@@ -6,7 +6,8 @@ class Sql extends PDO {
 
 	public function __construct(){
 
-		$this->conn = new PDO("pgsql:host=localhost;port=5432;dbname=dbphp7;user=postgres;password=marcon");
+		$this->conn = new PDO("pgsql:host=localhost;port=5432;dbname=dbphp7;user=postgres;password=marcon");//postgres
+		//$this->conn = new PDO("mysql:dbname=dbphp7;host=localhost", "root", "");//maysql
 
 	}
 

@@ -41,8 +41,8 @@ $aluno->insert();//chama a função de insert dentro do usuario
 
 echo $aluno;
 */
-
-
+/*
+//RALIZANDO UPDATE DE UM USUARIO
 $usuario = new Usuario();
 
 $usuario->loadById(3);
@@ -50,4 +50,12 @@ $usuario->loadById(3);
 
 $usuario->update("ISIS", "88787");
 echo $usuario;
+*/
+
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->delete();
+echo $usuario;
+
+
  ?>

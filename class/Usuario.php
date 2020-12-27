@@ -144,8 +144,8 @@ class Usuario {
 		));
 
 		$this->setIdusuario(0);
-		$this->setDeslogin("");
-		$this->setDessenha("");
+		$this->setDeslogin("");//APAGA NO OBJETO
+		$this->setDessenha("");//APAGA NO OBJETO
 		$this->setDtcadastro(new DateTime());
 
 	}

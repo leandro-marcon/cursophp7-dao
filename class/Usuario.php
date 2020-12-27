@@ -6,7 +6,7 @@ class Usuario {
 	private $deslogin;
 	private $dessenha;
 	private $dtcadastro;
-
+//PRECISA SEMPRE FAZER OS GET ANDS SETRS
 	public function getIdusuario(){
 		return $this->idusuario;
 	}
@@ -54,7 +54,7 @@ class Usuario {
 		}
 
 	}
-
+	///PARA LISTAR MAIS DE UM USUARIO USA O GET LIST
 	public static function getList(){
 
 		$sql = new Sql();
@@ -63,6 +63,7 @@ class Usuario {
 
 	}
 
+	///PARA BUSCAR UM USUARIO
 	public static function search($login){
 
 		$sql = new Sql();
@@ -72,7 +73,7 @@ class Usuario {
 		));
 
 	}
-
+///BUSCAR OS DADOS APENAS DO USUARIO QUE ESTIVER LOGADO
 	public function login($login, $password){
 
 		$sql = new Sql();

@@ -1,18 +1,23 @@
 <?php 
 
-spl_autoload_register(function($class_name){
+require_once("config.php");
+/*
+$sql = new Sql();
 
-	$filename = $class_name. ".php";
+$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+
+echo json_encode($usuarios);
+*/
+
+$root = new Usuario();
+
+$root->loadbyID(3);
 
 
-	if (file_exists($filename)){
+echo $root;
 
 
-		require_once($filename);
-	}
 
-
-	});
 
 
  ?>
